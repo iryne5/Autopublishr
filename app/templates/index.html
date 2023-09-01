@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Autopublishr</title>
+</head>
+<body>
+    <h1>Welcome to Autopublishr</h1>
+    <form id="script-form">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author"><br>
+        <label for="content">Content:</label><br>
+        <textarea id="content" name="content"></textarea><br>
+        <button type="submit">Submit Script</button>
+    </form>
+    <ul id="scripts-list"></ul>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#script-form').submit(function(e) {
+                e.preventDefault();
+                $.post('/submit_script', $(this).serialize(), function(response) {
+                    alert(response.message);
+                });
+            });
+
+            $.get('/get_scripts', function(response) {
+                var scriptsList = $('#scripts-list');
+                response.scripts.forEach(function(script) {
+                    scriptsList.append('<li>' + script.title + ' by ' + script.author + '</li>');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
