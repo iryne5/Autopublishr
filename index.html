@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autopublishr!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f7783d8395.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+   <div id="header">
+<div class="container">
+    <nav>
+        <img src="images/LOGO.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio"> Our Work</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p> Your All-In-One Publishing Assistant.</p>
+        <h1> One stop <span>Publishing?</span><br>We've got you!</h1>
+    </div>
+</div>
+   </div>
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/download (1).jfif" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About us</h1>
+                <p>Welcome to AutoPublishr, your go-to platform for seamless content management and distribution. Our mission is to empower content creators, businesses, and individuals by automating the publication process and making it effortlessly efficient. Let's revolutionize the way you publish and share content together!</p>
+
+           <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Effortless submission')">Effortless submission</p>
+            <p class="tab-links" onclick="opentab('Intelligent Analysis')">Intelligent Analysis</p>
+            <p class="tab-links" onclick="opentab('Personalized Insights')">Personalized Insights</p>
+           </div>
+           <div class="tab-contents active-tab" id="Effortless submission">
+            <ul>
+                <li><span>Effortless submission!</span><br>You begin by uploading your script onto the Autopublishr platform. Our code processes the script, extracting its content while preserving its original format.
+                </li>
+            </ul>
+           </div>
+           <div class="tab-contents" id="Intelligent Analysis">
+            <ul>
+                <li><span>Insightful recommendations!</span><br> Once your draft is uploaded, our code steps in to analyze its structure, characters, dialogue, and more. It compares these elements against established standards, offering insightful recommendations for improvement.
+
+                </li>
+            </ul>
+           </div>
+           <div class="tab-contents"id="Personalized Insights">
+            <ul>
+                <li><span>Our code doesn't just offer generic advice!</span><br>It understands the nuances of your draft and tailors recommendations to enhance your unique storytelling style.
+                </li>
+                  </ul>
+                 </div>
+                </div>
+             </div>
+        </div>
+   </div>
+
+   <div id="services">
+        <div class="container"> 
+             <h1 class="sub-title">Our Services</h1>
+                <div class="services-list">
+                    <div>
+                    <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>We create modern and  responsive websites tailored to your business requirements.</p>
+           <a href="#">Learn more</a>     
+              </div>
+
+              <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>Content Publishing</h2>
+                <p>Effortlessly publish your content with our user-friendly platform and reach your audience.</p>
+             <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-scroll"></i>
+                <h2>Scripting solutions</h2>
+                <p>Automate tasks and streamline processes with our customized scripting solutions.</p>
+             <a href="#">Learn more</a>
+            </div>  
+        </div>
+    </div>
+   </div>
+
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Our Work</h1> 
+        <div class="work-list"> 
+<div class="work">
+    <img src="images/work-1.png">
+    <div class="layer">
+        <h3>Social media App</h3>
+        <p>The App was designed for a feminine product brand for ease of sales.</p>
+   <a href="#"><i class="fa-solid fa-link"></i></a>
+    </div>
+
+  <div class="work">
+    <img src="images/work-2.png">
+    <div class="layer">
+        <h3>Social media Page</h3>
+     <p>We are incharge of managing the page, matters content and engagement.</p>
+  <a href="#"><i class="fa-solid fa-link"></i></a>
+  
+</div><div class="work">
+    <img src="images/work-3.png">
+    <div class="layer">
+        <h3>Website</h3>
+        <p>The website was designed for a music products brand for an excellent shopping experience.</p>
+  <a href="#"><i class="fa-solid fa-link"></i></a>
+             </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <div id="contact">
+    <div class="container">
+          <div class="row">
+            <div class="contact-left"></div>
+            <h1 class="sub-title">Contact Us</h1> 
+            <p><i class="fa-solid fa-paper-plane"></i>email@autopublishr.gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>0794505446</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <a href="" class="btn btn 2">Attach Files</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Send</button>
+
+                </form>
+            </div>
+        </div>
+    </div>  
+ </div>
+
+   <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+       for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+       } 
+       for(tabcontent  of tabcontents){
+        tabcontent.classList.remove("active-tab");
+       }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+   </script>
+
+   Copyright@AutoPublishr2024
+</body>
+</html> 
