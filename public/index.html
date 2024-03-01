@@ -1,43 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autopublishr!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7783d8395.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header" aria-labelledby="main-heading">
+        <div class="container">
+            <nav aria-label="Main navigation">
+                <img src="images/LOGO.png" alt="Autopublishr Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Our Work</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Your All-In-One Publishing Assistant.</p>
+                <h1 id="main-heading">One stop <span>Publishing?</span><br>We've got you covered!</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/download (1).jfif" alt="About Us Image" loading="lazy">
+                    </div>
+                    <div class="about-col-2">
+                        <h2 class="sub-title">About Us</h2>
+                        <p>Welcome to AutoPublishr, your go-to platform for seamless content management and distribution. Our mission is to empower content creators, businesses, and individuals by automating the publication process and making it effortlessly efficient. Let's revolutionize the way you publish and share content together!</p>
+                        <div class="tab-titles">
+                            <button class="tab-links active-link" onclick="opentab('Effortless submission')">Effortless submission</button>
+                            <button class="tab-links" onclick="opentab('Intelligent Analysis')">Intelligent Analysis</button>
+                            <button class="tab-links" onclick="opentab('Personalized Insights')">Personalized Insights</button>
+                        </div>
+                        <div class="tab-contents active-tab" id="Effortless submission">
+                            <ul>
+                                <li><span>Effortless submission!</span><br>You begin by uploading your script onto the Autopublishr platform. Our system processes the script, extracting its content while preserving its original format.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Intelligent Analysis">
+                            <ul>
+                                <li><span>Insightful recommendations!</span><br>Once your draft is uploaded, our system steps in to analyze its structure, characters, dialogue, and more. It compares these elements against established standards, offering insightful recommendations for improvement.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Personalized Insights">
+                            <ul>
+                                <li><span>Our system doesn't just offer generic advice!</span><br>It understands the nuances of your draft and tailors recommendations to enhance your unique storytelling style.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="container">
+                <h2 class="sub-title">Our Services</h2>
+                <div class="services-list">
+                    <article>
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Web Development</h3>
+                        <p>We create modern and responsive websites tailored to your business requirements.</p>
+                        <a href="#" aria-label="Learn more about Web Development">Learn more</a>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <h3>Content Publishing</h3>
+                        <p>Effortlessly publish your content with our user-friendly platform and reach your audience.</p>
+                        <a href="#" aria-label="Learn more about Content Publishing">Learn more</a>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-scroll"></i>
+                        <h3>Scripting Solutions</h3>
+                        <p>Automate tasks and streamline processes with our customized scripting solutions.</p>
+                        <a href="#" aria-label="Learn more about Scripting Solutions">Learn more</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="container">
+                <h2 class="sub-title">Our Work</h2>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="Social Media App" loading="lazy">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The App was designed for a feminine product brand for ease of sales.</p>
+                            <a href="#" aria-label="View more about Social Media App"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="Social Media Page" loading="lazy">
+                        <div class="layer">
+                            <h3>Social Media Page</h3>
+                            <p>We are in charge of managing the page, matters content, and engagement.</p>
+                            <a href="#" aria-label="View more about Social Media Page"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="Website Design" loading="lazy">
+                        <div class="layer">
+                            <h3>Website</h3>
+                            <p>The website was designed for a music products brand for an excellent shopping experience.</p>
+                            <a href="#" aria-label="View more about Website Design"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="submit-content">
+            <div class="container">
+                <h2 class="sub-title">Submit Your Content</h2>
+                <p>Ready to revolutionize your publishing process? Upload your script below, and let AutoPublishr take care of the rest.</p>
+                <form action="/your-server-endpoint" method="post" enctype="multipart/form-data">
+                    <form action="/upload" method="post" enctype="multipart/form-data"></form>
+                    <div class="form-group">
+                        <label for="contentFile">Upload Your Script:</label>
+                        <input type="file" id="contentFile" name="contentFile" accept=".pdf,.doc,.docx" required>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>        
+        <section id="contact">
+            <div class="container">
+                <h2 class="sub-title">Contact Us</h2>
+                <div class="row">
+                    <div class="contact-left">
+                        <p><i class="fa-solid fa-paper-plane"></i> email@autopublishr.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +1 234 567 8900</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form aria-label="Contact form">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright@Autopublishr 2024</p>
+    </footer>
+    <script>
+        // JavaScript for tab functionality
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
 </html>
+
+
+
